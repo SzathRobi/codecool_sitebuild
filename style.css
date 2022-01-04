@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+}
+
+form {
+  width: 100%;
+  max-width: 40rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: fadeIn 500ms ease-in forwards;
+}
+
+h1,
+p,
+a {
+  color: #138073;
+}
+
+h1 {
+  text-align: right;
+  margin-bottom: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 1.6rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  border: 1px solid #808080;
+  border-radius: 0.25rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: 250ms;
+}
+
+input::placeholder {
+  color: #71b3ab;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  padding-left: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.8);
+  cursor: pointer;
+}
+
+label p {
+  width: 100%;
+  padding-right: 1.5rem;
+  font-size: 1.25rem;
+}
+
+button {
+  width: 100%;
+  max-width: 25rem;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(to bottom, #39b69f, #2aa08a);
+  letter-spacing: 4px;
+  padding: 1.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+button:active {
+  background: linear-gradient(to bottom, #2a9e89, #1b8f7a);
+}
+
+button:hover {
+  box-shadow: 0 0 16px 1px #24c9aa;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    margin-bottom: 3rem;
+  }
+
+  label p {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
